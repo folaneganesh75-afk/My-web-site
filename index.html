@@ -1,0 +1,132 @@
+CTYPE html>
+<html lang="en">
+	<head>
+		    <meta charset="UTF-8">
+		        <title>Ganesh Folane | DevOps Engineer</title>
+			    <link rel="stylesheet" href="style.css">
+	</head>
+	<body>
+
+		    <header>
+			            <h1>Ganesh Folane</h1>
+				            <p>DevOps Engineer</p>
+					            <button onclick="scrollToProjects()">View Projects</button>
+						        </header>
+
+							    <section class="about">
+								            <h2>About Me</h2>
+									            <p>
+										                I am Ganesh Folane, a DevOps Engineer passionate about automation,
+												            cloud computing, CI/CD, and containerization.
+													            </p>
+														        </section>
+
+															    <section class="skills">
+																            <h2>Skills</h2>
+																	            <div class="skill-box">AWS</div>
+																		            <div class="skill-box">Docker</div>
+																			            <div class="skill-box">Kubernetes</div>
+																				            <div class="skill-box">Jenkins</div>
+																					            <div class="skill-box">Linux</div>
+																						            <div class="skill-box">Terraform</div>
+																							        </section>
+
+																								    <section class="projects" id="projects">
+																									            <h2>Projects</h2>
+																										            <div class="project-card">
+																												                <h3>CI/CD Pipeline</h3>
+																														            <p>Automated build and deployment using Jenkins & Docker.</p>
+																															            </div>
+
+																																            <div class="project-card">
+																																		                <h3>AWS Infrastructure</h3>
+																																				            <p>Deployed scalable infrastructure using Terraform.</p>
+																																					            </div>
+																																						        </section>
+
+																																							    <footer>
+																																								            <p>© 2025 Ganesh Folane | DevOps Engineer</p>
+																																									        </footer>
+
+																																										    <script src="script.js"></script>
+	</body>
+</html>* {
+    margin: 0;
+        padding: 0;
+	    font-family: Arial, sans-serif;
+	        box-sizing: border-box;
+		}
+
+		body {
+		    background: linear-gradient(120deg, #89f7fe, #66a6ff);
+		        color: #333;
+			}
+
+			header {
+			    text-align: center;
+			        padding: 80px 20px;
+				    background: linear-gradient(120deg, #ff9a9e, #fad0c4);
+				    }
+
+				    header h1 {
+				        font-size: 48px;
+					    color: #222;
+					    }
+
+					    header p {
+					        font-size: 20px;
+						    margin: 10px 0;
+						    }
+
+						    header button {
+						        padding: 12px 25px;
+							    border: none;
+							        background: #333;
+								    color: white;
+								        border-radius: 25px;
+									    cursor: pointer;
+									    }
+
+									    section {
+									        padding: 60px 20px;
+										    text-align: center;
+										    }
+
+										    .skills {
+										        background: #fff;
+											}
+
+											.skill-box {
+											    display: inline-block;
+											        background: #66a6ff;
+												    color: white;
+												        padding: 15px 25px;
+													    margin: 10px;
+													        border-radius: 20px;
+														}
+
+														.projects {
+														    background: #fdfbfb;
+														    }
+
+														    .project-card {
+														        background: white;
+															    margin: 20px auto;
+															        padding: 20px;
+																    width: 80%;
+																        max-width: 500px;
+																	    border-radius: 15px;
+																	        box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+																		}
+
+																		footer {
+																		    background: #333;
+																		        color: white;
+																			    padding: 20px;
+																			        text-align: center;
+																				}
+																				function scrollToProjects() {
+																				    document.getElementById("projects").scrollIntoView({
+																				            behavior: "smooth"
+																					        });
+																						}
