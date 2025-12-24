@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Contact Us | Modern Hospital</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Font & Icons -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Poppins', sans-serif;
+            background: #f2f6fb;
+        }
+
+        /* Header */
+        header {
+            background: #0a66c2;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        /* Contact Container */
+        .contact-container {
+            max-width: 1100px;
+            margin: 40px auto;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 30px;
+            padding: 20px;
+        }
+
+        /* Left Info Box */
+        .contact-info {
+            background: white;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+        }
+
+        .contact-info h2 {
+            color: #0a66c2;
+            margin-bottom: 10px;
+        }
+
+        .contact-info p {
+            margin-bottom: 15px;
+        }
+
+        .info-item {
+            margin: 15px 0;
+            font-size: 16px;
+        }
+
+        .info-item i {
+            color: #0a66c2;
+            margin-right: 10px;
+        }
+
+        /* Instagram Box */
+        .instagram-box {
+            margin-top: 30px;
+            padding: 20px;
+            background: linear-gradient(45deg, #f58529, #dd2a7b, #8134af);
+            color: white;
+            border-radius: 12px;
+            text-align: center;
+        }
+
+        .instagram-box i {
+            font-size: 50px;
+            margin-bottom: 10px;
+        }
+
+        .instagram-box a {
+            color: white;
+            font-size: 20px;
+            font-weight: bold;
+            text-decoration: none;
+        }
+
+        .instagram-box a:hover {
+            text-decoration: underline;
+        }
+
+        /* Form Box */
+        .contact-form {
+            background: white;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+        }
+
+        .contact-form h2 {
+            color: #0a66c2;
+            margin-bottom: 20px;
+        }
+
+        .contact-form input,
+        .contact-form textarea {
+            width: 100%;
+            padding: 12px;
+            margin-bottom: 15px;
+            border-radius: 8px;
+            border: 1px solid #ccc;
+            font-size: 15px;
+        }
+
+        .contact-form button {
+            background: #0a66c2;
+            color: white;
+            padding: 12px;
+            width: 100%;
+            border: none;
+            border-radius: 8px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        .contact-form button:hover {
+            background: #084a91;
+        }
+
+        /* Map */
+        .map {
+            margin: 40px auto;
+            max-width: 1100px;
+            padding: 20px;
+        }
+
+        .map iframe {
+            width: 100%;
+            height: 350px;
+            border-radius: 12px;
+            border: none;
+        }
+
+        /* Responsive */
+        @media (max-width: 900px) {
+            .contact-container {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Contact Modern Hospital</h1>
+    <p>We are here for your care & support</p>
+</header>
+
+<section class="contact-container">
+
+    <!-- Left Info -->
+    <div class="contact-info">
+        <h2>Get in Touch</h2>
+        <p>You can contact us anytime for appointments or emergency support.</p>
+
+        <div class="info-item">
+            <i class="fas fa-phone"></i> +91 98765 43210
+        </div>
+
+        <div class="info-item">
+            <i class="fas fa-envelope"></i> modernhospital@gmail.com
+        </div>
+
+        <div class="info-item">
+            <i class="fas fa-location-dot"></i> City Center, Your City, India
+        </div>
+
+        <!-- Instagram -->
+        <div class="instagram-box">
+            <i class="fab fa-instagram"></i>
+            <p>Follow Us on Instagram</p>
+            <a href="https://www.instagram.com/folane.g" target="_blank">
+                @folane.g
+            </a>
+        </div>
+    </div>
+
+    <!-- Right Form -->
+    <div class="contact-form">
+        <h2>Send Us a Message</h2>
+        <form>
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea rows="5" placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </div>
+
+</section>
+
+<!-- Map -->
+<div class="map">
+    <iframe 
+        src="https://www.google.com/maps?q=hospital&output=embed"
+        loading="lazy">
+    </iframe>
+</div>
+
+</body>
+</html>
+
